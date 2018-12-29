@@ -8,13 +8,11 @@ In PHP, there are three types of arrays :
 JavaScript does not support associative arrays. এক্ষেত্রে আমরা object কে ব্যাবহার করতে পারি। আর object ব্যাবহারের ক্ষেত্রে শুধুমাত্র [] হলেই চলবে। অর্থাৎ new কিওয়ার্ডের দরকার নেই। যেমনঃ
 
 ```javascript
-var points = new Array();
+var points = new Array(); // Bad practice
 ```
-> Bad practice
 ```javascript
-var points = [];
+var points = []; // Good practice
 ```
-> Good practice
 
 এখন এই অ্যারেগুলো ম্যানুপুলেট করার জন্য মজার মজার কিছু ফাংশান / মেথড আছে। চলুন এদের সম্পর্কে জানি। এরা array helper নামেও বেশ পরিচিত।
 
