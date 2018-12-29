@@ -18,11 +18,14 @@ var points = [];              // Good
 | --- | --- |
 count( $array ) | array.length
 
-Associative array তে আলাদাভাবে key এবং value পাওয়ার জন্য পিএইচপিতে দুইটা চমৎকার ফাংশান রয়েছে। array_keys() এবং array_values()
+## Associative array তে আলাদাভাবে key এবং value পাওয়ার জন্যঃ
+
+| পিএইচপি তে | জাভাস্ক্রিপ্টে |
+| --- | --- |
+array_keys() এবং array_values()
 এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator
 foreach ( $array as $key => $value ) {...}
-
-আর জাভাস্ক্রিপ্টেঃ
+|
 var serial = { "one" : 1, "two" : 2, "three": 3 };
 var keys = Object.keys(serial);
 var values = Object.values(serial);
