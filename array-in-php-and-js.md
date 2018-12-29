@@ -55,7 +55,6 @@ Response
 </td>
 
 <td>
-<pre>
 ```javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 var fruitsStr = fruits.join(' ');
@@ -63,7 +62,6 @@ console.log(fruitsStr);
 var fruitsArr = fruitsStr.split(" ");
 console.log(fruitsArr);
 ```
-</pre>
 </td>
 
 </tr>
