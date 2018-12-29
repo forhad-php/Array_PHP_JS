@@ -7,8 +7,8 @@ In PHP, there are three types of arrays :
 
 JavaScript does not support associative arrays. এক্ষেত্রে আমরা object কে ব্যাবহার করতে পারি। আর object ব্যাবহারের ক্ষেত্রে শুধুমাত্র [] হলেই চলবে। অর্থাৎ new কিওয়ার্ডের দরকার নেই। যেমনঃ
 
-var points = new Array();     // Bad
-var points = [];              // Good 
+var points = new Array(); <br/> *Bad*
+var points = []; *Good*
 
 এখন এই অ্যারেগুলো ম্যানুপুলেট করার জন্য মজার মজার কিছু ফাংশান / মেথড আছে। চলুন এদের সম্পর্কে জানি। এরা array helper নামেও বেশ পরিচিত।
 
@@ -22,7 +22,7 @@ count( $array ) | array.length
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-$serial = [1, 2, 3, 4, 5]; <br/> $serial_str = implode(', ', $serial); <br/> // এই `', '` অংশটাকে বলা হয় delimiter <br/> // implode এর পরিবর্তে join ব্যাবহার করা যেতে পারে <br/> $serial_str = join(', ', $serial); <br/> // join এর ক্ষেত্রে এই ', ' অংশটাকে বলা যায় glue <br/> var_dump($serial_str); <br/><br/> $serial_int = explode(', ', $serial_str); <br/> var_dump($serial_int); <br/><br/> $serial_two = [a, b,c, d, e]; <br/> // লক্ষ করুন b এর পরে c এর আগে স্পেস নেই। <br/> // এ ক্ষেত্রে আমরা preg_split ফাংশানে regex বা regular expression ব্যাবহার করতে পারি <br/> preg_split('/(, \|,)/', a, b,c, d, e); <br/> // এখানে "কমা" এর সাথে স্পেস অথবা শুধু "কমা" দুইটাকেই গ্রহন করে স্ট্রিং থেকে অ্যারেতে কনভার্ট করতে বলা হয়েছে | var fruits = ["Banana", "Orange", "Apple", "Mango"]; <br/> var fruitsStr = fruits.join(' '); <br/> console.log(fruitsStr); <br/><br/> var fruitsArr = fruitsStr.split(" "); <br/> console.log(fruitsArr);
+$serial = [1, 2, 3, 4, 5]; <br/> $serial_str = implode(', ', $serial); <br/> *এই `', '` অংশটাকে বলা হয় delimiter* <br/> *implode এর পরিবর্তে join ব্যাবহার করা যেতে পারে* <br/> $serial_str = join(', ', $serial); <br/> *join এর ক্ষেত্রে এই `', '` অংশটাকে বলা যায় glue* <br/> var_dump($serial_str); <br/><br/> $serial_int = explode(', ', $serial_str); <br/> var_dump($serial_int); <br/><br/> $serial_two = [a, b,c, d, e]; <br/> // লক্ষ করুন b এর পরে c এর আগে স্পেস নেই। <br/> // এ ক্ষেত্রে আমরা preg_split ফাংশানে regex বা regular expression ব্যাবহার করতে পারি <br/> preg_split('/(, \|,)/', a, b,c, d, e); <br/> // এখানে "কমা" এর সাথে স্পেস অথবা শুধু "কমা" দুইটাকেই গ্রহন করে স্ট্রিং থেকে অ্যারেতে কনভার্ট করতে বলা হয়েছে | var fruits = ["Banana", "Orange", "Apple", "Mango"]; <br/> var fruitsStr = fruits.join(' '); <br/> console.log(fruitsStr); <br/><br/> var fruitsArr = fruitsStr.split(" "); <br/> console.log(fruitsArr);
 
 ## Associative array তে আলাদাভাবে key এবং value পাওয়ার জন্যঃ
 
