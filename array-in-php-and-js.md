@@ -38,8 +38,14 @@ array_keys() এবং array_values() <br/><br/> এছাড়াও foreach ব�
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-<pre>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+<pre>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
 var fruitsStr = fruits.join(' ');
 console.log(fruitsStr);
 var fruitsArr = fruitsStr.split(" ");
-console.log(fruitsArr);</pre> | asdfs
+console.log(fruitsArr);
+</pre>
+|
+<pre>
+asdf asd5f7
+</pre>
