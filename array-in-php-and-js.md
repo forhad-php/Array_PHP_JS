@@ -39,7 +39,7 @@ console.log(values);
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-| array_keys() এবং array_values() <br/>
+array_keys() এবং array_values() <br/>
 এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/>
 foreach ( $array as $key => $value ) {...}
 |
