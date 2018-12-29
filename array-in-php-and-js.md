@@ -36,33 +36,8 @@ array_keys() এবং array_values() <br/><br/> এছাড়াও foreach ব�
 
 
 
-<table>
-<tr>
-<th>
-Status
-</th>
-<th>
-Response
-</th>
-</tr>
 
-<tr>
 
-<td>
-<pre>
-<br/><br/><br/>200<br/><br/><br/><br/><br/>400<br/>
-</pre>
-</td>
-
-<td>
-```javascript
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var fruitsStr = fruits.join(' ');
-console.log(fruitsStr);
-var fruitsArr = fruitsStr.split(" ");
-console.log(fruitsArr);
-```
-</td>
-
-</tr>
-</table>
+| পিএইচপি তে | জাভাস্ক্রিপ্টে |
+| --- | --- |
+```javascript var fruitsArr = fruitsStr.split(" "); console.log(fruitsArr); ``` | ```javascript var fruitsArr = fruitsStr.split(" "); console.log(fruitsArr); ```
