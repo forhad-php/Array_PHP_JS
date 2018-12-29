@@ -22,17 +22,29 @@ count( $array ) | array.length
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-``` array_keys() এবং array_values()
+```
+array_keys() এবং array_values()
 এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator
 foreach ( $array as $key => $value ) {...}
 ```
 |
-``` var serial = { "one" : 1, "two" : 2, "three": 3 };
+``` 
+var serial = { "one" : 1, "two" : 2, "three": 3 };
 var keys = Object.keys(serial);
 var values = Object.values(serial);
 console.log(keys);
 console.log(values);
 ```
+
+
+| Can Reorder | 2nd operation |2nd operation |2nd operation |
+| :---: | ---
+|1st operation|Normal Load <br/>Normal Store| Volatile Load <br/>MonitorEnter|Volatile Store<br/> MonitorExit|
+|Normal Load <br/> Normal Store| | | No|
+|Volatile Load <br/> MonitorEnter| No|No|No|
+|Volatile store <br/> MonitorExit| | No|No|
+
+
 
 আর iterator ব্যাবহার করতে চাইলেঃ
 var serial = { "one" : 1, "two" : 2, "three": 3 };
