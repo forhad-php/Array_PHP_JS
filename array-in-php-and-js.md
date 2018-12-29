@@ -14,9 +14,7 @@ var points = [];              // Good
 
 ## অ্যারে এর ভিতর কয়টা এলিমেন্ট আছে তা জানার জন্যঃ
 
-| php | js |
-| --- | --- |
-পিএইচপি তে ব্যাবহার করা হয় count( $array ) | আর জাভাস্ক্রিপ্টে ব্যাবহার করা হয় array.length
+পিএইচপি তে ব্যাবহার করা হয় count( $array ) | --- | আর জাভাস্ক্রিপ্টে ব্যাবহার করা হয় array.length
 
 Associative array তে আলাদাভাবে key এবং value পাওয়ার জন্য পিএইচপিতে দুইটা চমৎকার ফাংশান রয়েছে। array_keys() এবং array_values()
 এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator
