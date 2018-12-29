@@ -37,12 +37,9 @@ console.log(values);
 ```
 
 
-| Can Reorder | 2nd operation |2nd operation |2nd operation |
-| --- | --- | --- | --- |
-|1st operation|Normal Load <br/>Normal Store| Volatile Load <br/>MonitorEnter|Volatile Store<br/> MonitorExit|
-|Normal Load <br/> Normal Store| | | No|
-|Volatile Load <br/> MonitorEnter| No|No|No|
-|Volatile store <br/> MonitorExit| | No|No|
+| পিএইচপি তে | জাভাস্ক্রিপ্টে |
+| --- | --- |
+| array_keys() এবং array_values() <br/> এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/> foreach ( $array as $key => $value ) {...} | var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = Object.keys(serial); <br/> var values = Object.values(serial); <br/> console.log(keys); <br/> console.log(values);
 
 
 
