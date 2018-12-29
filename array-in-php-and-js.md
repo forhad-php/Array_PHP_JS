@@ -24,12 +24,10 @@ count( $array ) | array.length
 | --- | --- |
 array_keys() এবং array_values() \
 এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator \
-foreach ( $array as $key => $value ) {...}
-|
-var serial = { "one" : 1, "two" : 2, "three": 3 };
-var keys = Object.keys(serial);
-var values = Object.values(serial);
-console.log(keys);
+foreach ( $array as $key => $value ) {...} | var serial = { "one" : 1, "two" : 2, "three": 3 }; \
+var keys = Object.keys(serial); \
+var values = Object.values(serial); \
+console.log(keys); \
 console.log(values);
 
 আর iterator ব্যাবহার করতে চাইলেঃ
