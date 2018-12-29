@@ -39,13 +39,7 @@ console.log(values);
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-array_keys() এবং array_values() <br/>
-এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/>
-foreach ( $array as $key => $value ) {...}
-|
-var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/>
-var keys = Object.keys(serial); <br/> var values = Object.values(serial); <br/>
-console.log(keys); <br/> console.log(values);
+array_keys() এবং array_values() <br/> এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/> foreach ( $array as $key => $value ) {...} | var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = Object.keys(serial); <br/> var values = Object.values(serial); <br/> console.log(keys); <br/> console.log(values);
 
 
 
