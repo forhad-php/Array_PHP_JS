@@ -18,30 +18,14 @@ var points = [];              // Good
 | --- | --- |
 count( $array ) | array.length
 
+## explode, implode, join এর ব্যাবহারঃ (অ্যারে থেকে স্ট্রিং - স্ট্রিং থেকে অ্যারে)
+
+| পিএইচপি তে | জাভাস্ক্রিপ্টে |
+| --- | --- |
+$serial = [1, 2, 3, 4, 5]; <br/> $serial_str = implode(', ', $serial); <br/> // এই ', ' অংশটাকে বলা হয় delimiter <br/> // implode এর পরিবর্তে join ব্যাবহার করা যেতে পারে <br/> $serial_str = join(', ', $serial); <br/> // join এর ক্ষেত্রে এই ', ' অংশটাকে বলা যায় glue <br/> var_dump($serial_str); <br/> $serial_int = explode(', ', $serial_str); <br/> var_dump($serial_int); <br/><br/> $serial_two = [a, b,c, d, e]; <br/> // লক্ষ করুন b এর পরে c এর আগে স্পেস নেই। <br/> // এ ক্ষেত্রে আমরা preg_split ফাংশানে regex বা regular expression ব্যাবহার করতে পারি <br/> preg_split('/(, |,)/', a, b,c, d, e); <br/> // এখানে "কমা" এর সাথে স্পেস অথবা শুধু "কমা" দুইটাকেই গ্রহন করে স্ট্রিং থেকে অ্যারেতে কনভার্ট করতে বলা হয়েছে | var fruits = ["Banana", "Orange", "Apple", "Mango"]; <br/> var fruitsStr = fruits.join(' '); <br/> console.log(fruitsStr); <br/> var fruitsArr = fruitsStr.split(" "); <br/> console.log(fruitsArr);
+
 ## Associative array তে আলাদাভাবে key এবং value পাওয়ার জন্যঃ
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
 array_keys() এবং array_values() <br/><br/> এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/> foreach ( $array as $key => $value ) {...} | var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = Object.keys(serial); <br/> var values = Object.values(serial); <br/> console.log(keys); <br/> console.log(values); <br/><br/> আর iterator ব্যাবহার করতে চাইলেঃ <br/> var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = []; <br/> for (var key in serial) { <br/> keys.push(key); <br/> } <br/> console.log(keys);
-
-## explode, implode, join এর ব্যাবহারঃ (অ্যারে থেকে স্ট্রিং - স্ট্রিং থেকে অ্যারে)
-
-পিএইচপি তে
-$serial = [1, 2, 3, 4, 5];
-$serial_str = implode(', ', $serial); // এই ', ' অংশটাকে বলা হয় delimiter
-// implode এর পরিবর্তে join ব্যাবহার করা যেতে পারে
-$serial_str = join(', ', $serial); // join এর ক্ষেত্রে এই ', ' অংশটাকে বলা যায় glue
-var_dump($serial_str);
-$serial_int = explode(', ', $serial_str);
-var_dump($serial_int);
-
-$serial_two = [a, b,c, d, e]; // লক্ষ করুন b এর পরে c এর আগে স্পেস নেই।
-// এ ক্ষেত্রে আমরা preg_split ফাংশানে regex বা regular expression ব্যাবহার করতে পারি
-preg_split('/(, |,)/', a, b,c, d, e); // এখানে "কমা" এর সাথে স্পেস অথবা শুধু "কমা" দুইটাকেই গ্রহন করে স্ট্রিং থেকে অ্যারেতে কনভার্ট করতে বলা হয়েছে
-
-জাভাস্ক্রিপ্টেঃ
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var fruitsStr = fruits.join(' ');
-console.log(fruitsStr);
-var fruitsArr = fruitsStr.split(" ");
-console.log(fruitsArr);
