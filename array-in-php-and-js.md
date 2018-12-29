@@ -40,4 +40,5 @@ array_keys() এবং array_values() <br/><br/> এছাড়াও foreach ব�
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-```javascript var fruitsArr = fruitsStr.split(" "); console.log(fruitsArr); ``` | ```javascript var fruitsArr = fruitsStr.split(" "); console.log(fruitsArr); ```
+```javascript
+var fruitsArr = fruitsStr.split(" "); console.log(fruitsArr); ``` | ```javascript var fruitsArr = fruitsStr.split(" "); console.log(fruitsArr); ```
