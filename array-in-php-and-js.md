@@ -22,9 +22,9 @@ count( $array ) | array.length
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-array_keys() এবং array_values()
-এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator
-foreach ( $array as $key => $value ) {...}
+array_keys() এবং array_values() \
+এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator \
+foreach ( $array as $key => $value ) {...} \
 |
 var serial = { "one" : 1, "two" : 2, "three": 3 };
 var keys = Object.keys(serial);
