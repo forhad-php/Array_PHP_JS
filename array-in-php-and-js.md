@@ -33,3 +33,13 @@ $serial = [1, 2, 3, 4, 5]; <br/> $serial_str = implode(', ', $serial); <br/> *�
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
 array_keys() এবং array_values() <br/><br/> এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/> foreach ( $array as $key => $value ) {...} | var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = Object.keys(serial); <br/> var values = Object.values(serial); <br/> console.log(keys); <br/> console.log(values); <br/><br/> আর iterator ব্যাবহার করতে চাইলেঃ <br/> var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = []; <br/> for (var key in serial) { <br/> keys.push(key); <br/> } <br/> console.log(keys);
+
+
+
+| পিএইচপি তে | জাভাস্ক্রিপ্টে |
+| --- | --- |
+<pre>var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var fruitsStr = fruits.join(' ');
+console.log(fruitsStr);
+var fruitsArr = fruitsStr.split(" ");
+console.log(fruitsArr);</pre> | asdfs
