@@ -33,3 +33,9 @@ $serial = [1, 2, 3, 4, 5]; <br/> $serial_str = implode(', ', $serial); <br/> *�
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
 array_keys() এবং array_values() <br/><br/> এছাড়াও foreach ব্যাবহার করা যায়। foreach হচ্ছে একটা iterator <br/> foreach ( $array as $key => $value ) {...} | var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = Object.keys(serial); <br/> var values = Object.values(serial); <br/> console.log(keys); <br/> console.log(values); <br/><br/> *আর iterator ব্যাবহার করতে চাইলেঃ* <br/> var serial = { "one" : 1, "two" : 2, "three": 3 }; <br/> var keys = []; <br/> for (var key in serial) { <br/> keys.push(key); <br/> } <br/> console.log(keys);
+
+## Array কে string রুপে রেখে দিয়ে পরবর্তীতে অন্য কোথাও ব্যাবহার করতে দুইটা পদ্ধতি আছেঃ
+
+| পিএইচপি তে | জাভাস্ক্রিপ্টে |
+| --- | --- |
+serialize( $array ) // আনসিরিয়ালাইজ করতে চাইলে unserialize( $array ) <br> অথবা <br> json_encode( $array ) // ডিকোড করতে চাইলে json_decode( $array ) <br>
