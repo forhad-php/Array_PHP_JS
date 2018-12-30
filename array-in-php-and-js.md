@@ -42,4 +42,5 @@ serialize( $array ) // আনসিরিয়ালাইজ করতে চা�
 
 ## Deep copy এবং Shallow copy কি জিনিস?
 > Deep copy মানে Copy by value যেমনঃ $array = $newarray
+
 > আর Shallow copy মানে Copy by reference যেমনঃ $array = &$newarray
