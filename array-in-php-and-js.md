@@ -20,7 +20,7 @@ var points = []; // Good practice
 
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-count( $array ) | array.length
+count( $array ); <br/> এই ফাংশনটি সেকেন্ড প্যারামিটার হিসেবে COUNT_RECURSIVE কন্সট্যান্ট এ্যাক্সেপ্ট করে। যার কাজ হচ্ছে মাল্টিডায়মেশনাল অ্যারে থেকে key এবং value সকল কিছু সে গননা রাখবে <br/> echo count($array, COUNT_RECURSIVE); | array.length
 
 ## explode, implode, join এর ব্যাবহারঃ (অ্যারে থেকে স্ট্রিং - স্ট্রিং থেকে অ্যারে)
 
