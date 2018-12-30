@@ -1,9 +1,9 @@
 # আসুন অ্যারে সম্পর্কে জানি, একইসাথে পিএইচপি এবং জাভাস্ক্রিপ্টেঃ
 
 In PHP, there are three types of arrays :
-⋅⋅* Indexed arrays : Arrays with a numeric index.
-	- Associative arrays : Arrays with named keys. (যে অ্যারেরে key এবং value থাকে)
-	- Multidimensional arrays / Nested array : Arrays containing one or more arrays. (একটা অ্যারে এর ভিতর এক বা একাধিক অ্যারে)
+- Indexed arrays : Arrays with a numeric index.
+- Associative arrays : Arrays with named keys. (যে অ্যারেরে key এবং value থাকে)
+- Multidimensional arrays / Nested array : Arrays containing one or more arrays. (একটা অ্যারে এর ভিতর এক বা একাধিক অ্যারে)
 
 JavaScript does not support associative arrays. এক্ষেত্রে আমরা object কে ব্যাবহার করতে পারি। আর object ব্যাবহারের ক্ষেত্রে শুধুমাত্র [] হলেই চলবে। অর্থাৎ new কিওয়ার্ডের দরকার নেই। যেমনঃ
 
