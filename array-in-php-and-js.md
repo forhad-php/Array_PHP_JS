@@ -1,7 +1,7 @@
 # আসুন অ্যারে সম্পর্কে জানি, একইসাথে পিএইচপি এবং জাভাস্ক্রিপ্টেঃ
 
 In PHP, there are three types of arrays :
-	- Indexed arrays : Arrays with a numeric index.
+⋅⋅* Indexed arrays : Arrays with a numeric index.
 	- Associative arrays : Arrays with named keys. (যে অ্যারেরে key এবং value থাকে)
 	- Multidimensional arrays / Nested array : Arrays containing one or more arrays. (একটা অ্যারে এর ভিতর এক বা একাধিক অ্যারে)
 
