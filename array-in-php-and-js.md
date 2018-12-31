@@ -84,6 +84,6 @@ array_reduce এটাও প্রতিটা এলিমেন্টের �
 
 
 ![alt text](https://github.com/forhad-php/Array_PHP_JS/blob/master/Screenshot_1.png "Logo Title Text 1")
-
+![alt text](https://github.com/forhad-php/Array_PHP_JS/blob/master/Screenshot_2.png "Logo Title Text 1")
 
 [Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
