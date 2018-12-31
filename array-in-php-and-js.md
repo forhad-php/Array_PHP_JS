@@ -1,5 +1,11 @@
 # আসুন অ্যারে সম্পর্কে জানি, একইসাথে পিএইচপি এবং জাভাস্ক্রিপ্টেঃ
 
+## Table
+-
+-
+-
+-
+
 In PHP, there are three types of arrays :
 - Indexed arrays : Arrays with a numeric index.
 - Associative arrays : Arrays with named keys. (যে অ্যারেরে key এবং value থাকে)
@@ -71,3 +77,5 @@ array_walk প্রতিটা এলিমেন্টের উপর কা
 array_map অ্যারে ওয়াকের মতই কাজ করে কিন্তু return করার ক্ষেত্রে <br>
 array_filter অ্যারে মেপের মতই কাজ করে কিন্তু true হলে return করে আর false হলে return করেনা।
 array_reduce এটাও প্রতিটা এলিমেন্টের উপর কাজ করে কিন্তু অ্যারেকে ছোট করে ফেলে যেমনঃ
+
+[Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
