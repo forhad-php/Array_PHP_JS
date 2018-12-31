@@ -28,9 +28,31 @@ var points = []; // Good practice
 
 ## অ্যারে এর ভিতর কয়টা এলিমেন্ট আছে তা জানার জন্যঃ
 
-| পিএইচপি তে | জাভাস্ক্রিপ্টে |
-| --- | --- |
-count( $array ); <br/> এই ফাংশনটি সেকেন্ড প্যারামিটার হিসেবে COUNT_RECURSIVE কন্সট্যান্ট এ্যাক্সেপ্ট করে। যার কাজ হচ্ছে মাল্টিডায়মেশনাল অ্যারে থেকে key এবং value সকল কিছু সে গননা রাখবে <br/> echo count($array, COUNT_RECURSIVE); | array.length
+<table>
+<tr>
+<th>পিএইচপিতে</th>
+<th>জাভাস্ক্রিপ্টে</th>
+</tr>
+<tr>
+
+<td>
+
+```php
+count( $array );
+/ * এই ফাংশনটি সেকেন্ড প্যারামিটার হিসেবে COUNT_RECURSIVE কন্সট্যান্ট এ্যাক্সেপ্ট করে। যার কাজ হচ্ছে মাল্টিডায়মেশনাল অ্যারে থেকে key এবং value সকল কিছু সে গননা রাখবে */
+echo count($array, COUNT_RECURSIVE);
+```
+</td>
+
+<td>
+
+```javascript
+array.length
+```
+</td>
+
+</tr>
+</table>
 
 ## explode, implode, join এর ব্যাবহারঃ (অ্যারে থেকে স্ট্রিং - স্ট্রিং থেকে অ্যারে)
 
