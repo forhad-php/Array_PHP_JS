@@ -86,4 +86,34 @@ array_reduce এটাও প্রতিটা এলিমেন্টের �
 ![alt text](https://github.com/forhad-php/Array_PHP_JS/blob/master/Screenshot_1.png "Logo Title Text 1")
 ![alt text](https://github.com/forhad-php/Array_PHP_JS/blob/master/Screenshot_2.png "Logo Title Text 1")
 
+
+
+<table>
+	<caption>Monthly savings</caption>
+	<tr>
+      <th>Month</th>
+      <th>Savings</th>
+  	</tr>
+	<tr>
+	<td>
+
+  ```php
+  const int x = 3;
+  const string y = "foo";
+  readonly Object obj = getObject();
+  ```
+</td>
+<td>
+
+  ```javascript
+  def x : int = 3;
+  def y : string = "foo";
+  def obj : Object = getObject();
+  ```
+</td>
+</tr>
+</table>
+
+
+
 [Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
