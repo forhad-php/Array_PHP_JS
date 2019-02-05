@@ -170,12 +170,87 @@ array_intersect() // যেগুলো মিলেছে সেগুলো �
 array_diff() // যেগুলা মিলেনি সেগুলা তুলে আনবে
 
 ## array_walk() , array_map() , array_filter() , array_reduce()
-এই চারটা ফাংশান একসাথে রাখা হয়েছে কারন মিল রয়েছে বুঝতে সুবিধা হবে -
+> এই চারটা ফাংশান একসাথে রাখা হয়েছে কারন মিল রয়েছে বুঝতে সুবিধা হবে - <br>
 array_walk প্রতিটা এলিমেন্টের উপর কাজ চালায়। কিন্তু এটা শুধু echo বা print করার ক্ষেত্রে <br>
 array_map অ্যারে ওয়াকের মতই কাজ করে কিন্তু return করার ক্ষেত্রে <br>
 array_filter অ্যারে মেপের মতই কাজ করে কিন্তু true হলে return করে আর false হলে return করেনা।
 array_reduce এটাও প্রতিটা এলিমেন্টের উপর কাজ করে কিন্তু অ্যারেকে ছোট করে ফেলে যেমনঃ
 > উদাহরণ পরে সময় করে দেয়া হবে..
+
+## Difference between array_map, array_walk and array_filter (Topic from stackoverflow)
+
+Changing Values:
+array_map cannot change the values inside input array(s) while array_walk can; in particular, array_map never changes its arguments.
+
+Array Keys Access:
+array_map cannot operate with the array keys, array_walk can.
+
+Return Value:
+array_map returns a new array, array_walk only returns true/false. Hence, if you don't want to create an array as a result of traversing one array, you should use array_walk.
+
+Iterating Multiple Arrays:
+array_map also can receive an arbitrary number of arrays and it can iterate over them in parallel, while array_walk operates only on one.
+
+Passing Arbitrary Data to Callback:
+array_walk can receive an extra arbitrary parameter to pass to the callback. This mostly irrelevant since PHP 5.3 (when anonymous functions were introduced).
+
+Length of Returned Array:
+The resulting array of array_map has the same length as that of the largest input array; array_walk does not return an array but at the same time it cannot alter the number of elements of original array; array_filter picks only a subset of the elements of the array according to a filtering function. It does preserve the keys.
+
+Example:
+```php
+$origarray1 = array(2.4, 2.6, 3.5);
+$origarray2 = array(2.4, 2.6, 3.5);
+
+print_r(array_map('floor', $origarray1)); // $origarray1 stays the same
+
+// changes $origarray2
+array_walk($origarray2, function (&$v, $k) { $v = floor($v); }); 
+print_r($origarray2);
+
+// this is a more proper use of array_walk
+array_walk($origarray1, function ($v, $k) { echo "$k => $v", "\n"; });
+
+// array_map accepts several arrays
+print_r(
+    array_map(function ($a, $b) { return $a * $b; }, $origarray1, $origarray2)
+);
+
+// select only elements that are > 2.5
+print_r(
+    array_filter($origarray1, function ($a) { return $a > 2.5; })
+);
+
+/*
+Result:
+Array
+(
+    [0] => 2
+    [1] => 2
+    [2] => 3
+)
+Array
+(
+    [0] => 2
+    [1] => 2
+    [2] => 3
+)
+0 => 2.4
+1 => 2.6
+2 => 3.5
+Array
+(
+    [0] => 4.8
+    [1] => 5.2
+    [2] => 10.5
+)
+Array
+(
+    [1] => 2.6
+    [2] => 3.5
+)
+*/
+```
 
 ## নির্দিষ্ট রকমের Array Key ধরে ডিলেট করার জন্যঃ
 
