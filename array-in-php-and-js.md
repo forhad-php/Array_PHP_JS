@@ -175,38 +175,7 @@ array_walk প্রতিটা এলিমেন্টের উপর কা
 array_map অ্যারে ওয়াকের মতই কাজ করে কিন্তু return করার ক্ষেত্রে <br>
 array_filter অ্যারে মেপের মতই কাজ করে কিন্তু true হলে return করে আর false হলে return করেনা।
 array_reduce এটাও প্রতিটা এলিমেন্টের উপর কাজ করে কিন্তু অ্যারেকে ছোট করে ফেলে যেমনঃ
-
-
-![alt text](https://github.com/forhad-php/Array_PHP_JS/blob/master/Screenshot_1.png "Logo Title Text 1")
-![alt text](https://github.com/forhad-php/Array_PHP_JS/blob/master/Screenshot_2.png "Logo Title Text 1")
-
-
-
-<table>
-	<caption>Monthly savings</caption>
-	<tr>
-      <th>Month</th>
-      <th>Savings</th>
-  	</tr>
-	<tr>
-	<td>
-
-  ```php
-  const int x = 3;
-  const string y = "foo";
-  readonly Object obj = getObject();
-  ```
-</td>
-<td>
-
-  ```javascript
-  def x : int = 3;
-  def y : string = "foo";
-  def obj : Object = getObject();
-  ```
-</td>
-</tr>
-</table>
+> উদাহরণ পরে সময় করে দেয়া হবে..
 
 ## Array Key ডিলেট করার জন্য ...
 
