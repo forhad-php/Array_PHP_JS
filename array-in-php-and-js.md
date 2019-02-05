@@ -177,7 +177,7 @@ array_filter অ্যারে মেপের মতই কাজ করে �
 array_reduce এটাও প্রতিটা এলিমেন্টের উপর কাজ করে কিন্তু অ্যারেকে ছোট করে ফেলে যেমনঃ
 > উদাহরণ পরে সময় করে দেয়া হবে..
 
-## Array Key ডিলেট করার জন্য ...
+## নির্দিষ্ট রকমের Array Key ধরে ডিলেট করার জন্যঃ
 
 ```php
 function array_remove_keys( $array, $keys = array() ) {
@@ -218,7 +218,7 @@ $data = array(
 // Output before array_remove_keys()
 var_dump($data);
  
-// Remove the specific keys who have "a_" only.
+// Remove the specific keys where "a_" only.
 $data = array_remove_keys($data, preg_grep( '/^a_/', array_keys(  $data ) ) );
  
 // Output after array_remove_keys()
