@@ -208,6 +208,52 @@ array_reduce এটাও প্রতিটা এলিমেন্টের �
 </tr>
 </table>
 
+## Array Key ডিলেট করার জন্য ...
 
+```php
+function array_remove_keys( $array, $keys = array() ) {
+ 
+	// If array is empty or not an array at all, don't bother
+	// doing anything else.
+	if( empty( $array ) || ( ! is_array( $array ) ) ) {
+		return $array;
+	}
+ 
+	// If $keys is a comma-separated list, convert to an array.
+	if( is_string( $keys ) ) {
+		$keys = explode( ',', $keys );
+	}
+ 
+	// At this point if $keys is not an array, we can't do anything with it.
+	if( ! is_array( $keys ) ) {
+		return $array;
+	}
+ 
+  // array_diff_key() expected an associative array.
+  $assocKeys = array();
+  foreach( $keys as $key ) {
+      $assocKeys[ $key ] = true;
+  }
+
+  return array_diff_key( $array, $assocKeys );
+}
+ 
+// Example:
+$data = array(
+  "a_one"   => "red",
+  "a_two"   => "green",
+  "c"       => "blue",
+  "a_three" => "yellow"
+  );
+ 
+// Output before array_remove_keys()
+var_dump($data);
+ 
+// Remove the specific keys who have "a_" only.
+$data = array_remove_keys($data, preg_grep( '/^a_/', array_keys(  $data ) ) );
+ 
+// Output after array_remove_keys()
+var_dump($data);
+```
 
 [Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
