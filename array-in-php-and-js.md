@@ -300,4 +300,45 @@ $data = array_remove_keys($data, preg_grep( '/^a_/', array_keys(  $data ) ) );
 var_dump($data);
 ```
 
+## Array key ধরে কোন value খালি আছে কিনা check করব যেভাবে..
+
+```PHP
+$cars = array(
+    array("Make"=>"Toyota", "Model"=>"Corolla", "Color"=>"White"),
+    array("Make"=>"Toyota", "Model"=>"Camry", "Color"=>"Black"),
+    array("Make"=>"Honda", "Model"=>"", "Color"=>"White"),
+    array("Make"=>"Nissan", "Model"=>"Juke", "Color"=>"Red")
+  );
+
+$cars_model = array_column( $cars, 'Model' );
+
+if(count(array_filter($cars_model)) == count($cars_model)) {
+    echo 'OK';
+} else {
+    echo 'ERROR';
+}
+
+// Echo : Error
+// Because of the third array "Model" key have no value
+```
+
+## WordPress এ array helper - (নিচে একটা হেল্পার উল্লেখ করা হলো বাকিগুলো পরবর্তীতে আপডেট করা হবে)
+```PHP
+// 1. wp_list_pluck( $list, $field, $index_key = null );
+
+$cars = array(
+	array("Make"=>"Toyota", "Model"=>"Corolla", "Color"=>"White"),
+	array("Make"=>"Toyota", "Model"=>"Camry", "Color"=>"Black"),
+	array("Make"=>"Honda", "Model"=>"", "Color"=>"White"),
+	array("Make"=>"Nissan", "Model"=>"Juke", "Color"=>"Red")
+);
+$cars_model = wp_list_pluck($cars, 'Model');
+/* Array(
+[0] => Corolla
+[1] => Camry
+[2] => 
+[3] => Juke
+) */
+```
+
 [Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
