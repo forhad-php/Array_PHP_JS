@@ -341,4 +341,27 @@ $cars_model = wp_list_pluck($cars, 'Model');
 ) */
 ```
 
+## নির্দিষ্ট কোন key এর সকল value খালি কিনা?
+
+```PHP
+$cars = array(
+	array("Make"=>"Toyota", "Model"=>"", "Color"=>"White"),
+	array("Make"=>"Toyota", "Model"=>"", "Color"=>"Black"),
+	array("Make"=>"Honda", "Model"=>"", "Color"=>"White"),
+	array("Make"=>"Nissan", "Model"=>"", "Color"=>"Red")
+);
+
+$cars_model = array_column( $cars, 'Model' );
+
+if(!array_filter($cars_model)) {
+    echo 'All Model Empty';
+}else{
+  echo 'Its OK';
+}
+
+/* Result
+"All Model Empty"
+Because all of the value of model is empty. */
+```
+
 [Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
