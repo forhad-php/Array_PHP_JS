@@ -276,7 +276,7 @@ echo $sum; // output = 15
 // তারপর $oldValue '6' + $newValue '4' = 10
 // সর্বশেষ $oldValue '10' + $newValue '5' = 15
 
-[এই পুরো প্রক্রিয়াটি বুঝতে অসুবিধা হলে এই কোডটা দেখুন()](https://github.com/forhad-php/Array_PHP_JS/blob/master/php_fibonacci_series_with_loop.md)
+[এই পুরো প্রক্রিয়াটি বুঝতে অসুবিধা হলে এই কোডটা দেখুন](https://github.com/forhad-php/Array_PHP_JS/blob/master/php_fibonacci_series_with_loop.md)
 ```
 
 ## নির্দিষ্ট রকমের Array Key ধরে ডিলেট করার জন্যঃ
