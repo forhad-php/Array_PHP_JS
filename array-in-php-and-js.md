@@ -390,4 +390,15 @@ if(!array_filter($cars_model)) {
 Because all of the value of model is empty. */
 ```
 
+## Array এলিমেন্টের মাধ্যমে Condition
+```JS
+var select_value_layout = 'mosaic';
+if ( ['inline','mosaic'].indexOf(select_value_layout) !== -1 ) {
+	// That means, condition satisfied by elements.
+	console.log('true');
+} else {
+	console.log('false');
+}
+```
+
 [Back_to_top](#আসুন-অ্যারে-সম্পর্কে-জানি-একইসাথে-পিএইচপি-এবং-জাভাস্ক্রিপ্টেঃ)
