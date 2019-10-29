@@ -161,6 +161,22 @@ unset( $array['keyname'] ) | পরে লিখব
 | --- | --- |
 array_push( $array['keyname'], array( 'key_one' => $value1, 'key_two' => $value2 ) ) | পরে লিখব..
 
+## Associative অ্যারে থেকে key ধরে তার মধ্যে key সহ value যোগ করতে আরেকটি ছোট একটা ট্রিক্স নিচে দেয়া হলঃ
+> উল্লেখ্য যে এখানে += ব্যাবহার করা হয়েছে। যা আরেকটা Array তৈরি না করেই সরাসরি যোগ হয়ে যায়।
+```PHP
+$array = array(
+	'section' => array(
+		'height' => '100px',
+		'width'  => '100px',
+	),
+);
+
+$array['section'] += [
+	'color'      => '#fff',
+	'background' => '#000',
+];
+```
+
 ## array_combine()
 - array_combine() যেটা করে যে, একটা array এর key index অনুযায়ী value যোগ করে। যেমনঃ
 ```PHP
