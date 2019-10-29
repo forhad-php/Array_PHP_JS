@@ -156,15 +156,13 @@ JSON.parse()
 | --- | --- |
 unset( $array['keyname'] ) | পরে লিখব
 
-# আবার Associative অ্যারে থেকে key ধরে তার মধ্যে key সহ value যোগ করতে চাইলেঃ
+## আবার Associative অ্যারে থেকে key ধরে তার মধ্যে key সহ value যোগ করতে চাইলেঃ
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-```PHP
 array_push( $array['keyname'], array( 
 	'key_one' => $value1,
 	'key_two' => $value2
-) ) | পরে লিখব
-```
+) ) | পরে লিখব..
 
 ## array_slice() এবং array_splice()
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
