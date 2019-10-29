@@ -159,10 +159,16 @@ unset( $array['keyname'] ) | পরে লিখব
 ## আবার Associative অ্যারে থেকে key ধরে তার মধ্যে key সহ value যোগ করতে চাইলেঃ
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
 | --- | --- |
-array_push( $array['keyname'], array( 
-	'key_one' => $value1,
-	'key_two' => $value2
-) ) | পরে লিখব..
+array_push( $array['keyname'], array( 'key_one' => $value1, 'key_two' => $value2 ) ) | পরে লিখব..
+
+## array_combine()
+- array_combine() যেটা করে যে, একটা array এর key index অনুযায়ী value যোগ করে। যেমনঃ
+```PHP
+$fname=array("Peter","Ben","Joe");
+$age=array("35","37","43");
+$c=array_combine($fname,$age);
+print_r($c); // Array ( [Peter] => 35 [Ben] => 37 [Joe] => 43 )
+```
 
 ## array_slice() এবং array_splice()
 | পিএইচপি তে | জাভাস্ক্রিপ্টে |
